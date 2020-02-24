@@ -83,6 +83,14 @@ jQuery(document).ready(function($){
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
 
+        // Adding shadow to the navbar
+        if (st >= 0) {
+          $("nav").removeClass("no-shadow");
+        }
+        if (st <= 0) {
+          $("nav").addClass("no-shadow");
+        }
+      
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight){
