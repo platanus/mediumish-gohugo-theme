@@ -121,9 +121,9 @@ jQuery(document).ready(function($){
 
 function mediaQueries(x) {
   if (x.matches) { // If media query matches
-    $('.nav-link--return').removeClass('ftl-btn').addClass('nav-link--return')
+    $('.nav-link--return').removeClass('ftl-btn').addClass('no-btn')
   } else {
-    $('.nav-link--return').addClass('ftl-btn').removeClass('nav-link--return')
+    $('.nav-link--return').addClass('ftl-btn').removeClass('no-btn')
   }
 }
 

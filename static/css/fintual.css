@@ -204,7 +204,7 @@ button[aria-expanded="true"] .navbar-toggle__icon-bar--third {
   transform: translateY(-6px) rotate(-45deg) ;
 }
 
-.nav-link--return {
+.no-btn {
   color: #005ad6 !important;
   font-weight: 400;
 }
