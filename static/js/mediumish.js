@@ -1,5 +1,8 @@
 jQuery(document).ready(function($){
 
+
+
+
     var offset = 1250; 
     var duration = 800; 
     jQuery(window).scroll(function() { 
@@ -115,3 +118,15 @@ jQuery(document).ready(function($){
 
 
 });
+
+function mediaQueries(x) {
+  if (x.matches) { // If media query matches
+    $('.nav-link--return').removeClass('ftl-btn').addClass('nav-link--return')
+  } else {
+    $('.nav-link--return').addClass('ftl-btn').removeClass('nav-link--return')
+  }
+}
+
+var x = window.matchMedia("(max-width: 990px)")
+mediaQueries(x) // Call listener function at run time
+x.addListener(mediaQueries) // Attach listener function on state changes
