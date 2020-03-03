@@ -1,5 +1,8 @@
 jQuery(document).ready(function($){
 
+
+
+
     var offset = 1250; 
     var duration = 800; 
     jQuery(window).scroll(function() { 
@@ -83,6 +86,14 @@ jQuery(document).ready(function($){
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
 
+        // Adds shadow to the navbar but only when it is flying over the content of the page
+        if (st >= 0) {
+          $("nav").removeClass("no-shadow");
+        }
+        if (st <= 0) {
+          $("nav").addClass("no-shadow");
+        }
+
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight){
@@ -107,3 +118,15 @@ jQuery(document).ready(function($){
 
 
 });
+
+function mediaQueries(x) {
+  if (x.matches) { // If media query matches
+    $('.nav-link--return').removeClass('ftl-btn').addClass('no-btn')
+  } else {
+    $('.nav-link--return').addClass('ftl-btn').removeClass('no-btn')
+  }
+}
+
+var x = window.matchMedia("(max-width: 990px)")
+mediaQueries(x) // Call listener function at run time
+x.addListener(mediaQueries) // Attach listener function on state changes
