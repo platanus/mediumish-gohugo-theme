@@ -194,13 +194,8 @@ section.recent-posts {
 .post-top-meta span {
     font-size: 0.9rem;
     color: rgba(0, 0, 0, .44);
-    display: inline-block;
-}
-
-.post-top-meta .author-description {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-size: 0.95rem;
+    display: block;
+    padding: 2px 0;
 }
 
 .toc ul {

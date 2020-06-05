@@ -60,14 +60,6 @@ img + em {
   margin-left: 10px;
 }
 
-.post-top-meta .author-description {
-  font-size: 0.9rem !important;
-}
-
-.post-top-meta span {
-  line-height: 0.9rem; 
-}
-
 .listfeaturedtag h2.card-title,
 .listrecent h2.card-title {
   font-size: 1.3rem;
@@ -216,7 +208,4 @@ button[aria-expanded="true"] .navbar-toggle__icon-bar--third {
 .no-btn {
   color: #005ad6 !important;
   font-weight: 400;
-}
-.author-description__timers {
-  display: block !important;
 }
