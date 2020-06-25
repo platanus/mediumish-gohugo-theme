@@ -29,8 +29,8 @@ img + em {
 
 .nav-item--discovery {
   margin-left: auto;
-
 }
+
 .nav-item--discovery .nav-link {
   position: relative;
   margin-left: 28px;
@@ -66,10 +66,18 @@ img + em {
 }
 
 @media (max-width: 990px) {
-  .nav-item--return {
+  .nav-item--discovery {
+    margin-left: 0;
+  }
+  .nav-item--discovery span, 
+  .nav-item--discovery svg {
+    display: none;
+  }
+  .nav-item--discovery .nav-link {
     margin-left: 0;
   }
 }
+
 .navbar-brand {
   padding: 0;
   font-size: 0;
