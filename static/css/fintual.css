@@ -162,6 +162,25 @@ a:hover {
   text-decoration: none;
 }
 
+a.discovery {
+  background:
+      linear-gradient(
+        to bottom, #A0C8FF 0%,
+        #A0C8FF 100%
+      );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 6px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+a.discovery:hover {
+  background-size: 4px 50px;
+}
+
+
 .mainheading,
 .posttitle {
   font-family: Poppins;
