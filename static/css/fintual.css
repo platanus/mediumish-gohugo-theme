@@ -144,12 +144,18 @@ img + em {
 .card {
   border-radius: 12px !important;
   overflow: hidden !important;
+  position: relative;
 }
 .card:hover {
   box-shadow: 0 1px 18px 0 rgba(183, 183, 183, 0.2),
     0 6px 10px 0 rgba(183, 183, 183, 0.2),
     0 3px 5px -1px rgba(183, 183, 183, 0.2);
   cursor: pointer;
+}
+.card-full-size-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 /* LINKS */
